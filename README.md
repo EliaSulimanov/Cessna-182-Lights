@@ -8,5 +8,9 @@ Made for ATTINY85.
 ## Breadboard
 ![Minimal PCB](https://i.ibb.co/0MRKQrC/cessna-lights-small-pcb.jpg)
 
+## Related Projects
+* [6 Channel RC TX](https://github.com/EliaSulimanov/6-Channel-RC-TX)
+* [RC plane rx](https://github.com/EliaSulimanov/RC_plane_rx)
+
 ## License
 GNU General Public License v3.0
