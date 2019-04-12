@@ -10,6 +10,9 @@ Cessna 182 RC plane lights control.
  - [Quick start](#quick-start)
     - [Installing](#installing)
     - [Using](#using)
+ - [Breadboard](#breadboard)
+ - [Related Projects](#related-projects)
+ - [License](#license)
  
  ## How It Works
  - When the arduino reads pulse change from the tx pin it changes the lights mod.
