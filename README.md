@@ -24,8 +24,8 @@ Cessna 182 RC plane lights control.
  Next upload this code to your ATtiny85 using arduino as ISP.
  
  ### Using
- All you need to do is just wire your breadboard/pcb as [Here](#breadboard) and connect the tx pin to your RCs TX 4'th channel.
- You are ready to go!
+ All you need to do is just wire your breadboard/pcb as [Here](#breadboard) and connect the tx pin to your RCs TX 4'th channel.  
+ You are good to go!
 
 ## Breadboard
 ![Minimal PCB](https://i.ibb.co/0MRKQrC/cessna-lights-small-pcb.jpg)
