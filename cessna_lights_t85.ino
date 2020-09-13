@@ -1,3 +1,15 @@
+#define IDLE_STATE tx > 1300 && tx < 1700
+#define STICK_RIGHT tx > 1700 && ready_for_change
+#define STICK_LEFT tx < 1300 && ready_for_change
+#define LEFT --
+#define RIGHT ++
+
+#define STATE_CHANGE(DIRECTION) do { \
+    state DIRECTION; \
+    state %= 3; \
+    ready_for_change = false; \
+    } while(0)
+
 const int TAXI_LED =      0;
 const int NAV_WING_LED =  1;
 const int TX =            2;
@@ -6,6 +18,7 @@ const int LAND_LED =      4;
 
 int state;
 unsigned long tx;
+bool ready_for_change = true;
 
 void setup() {
   pinMode(TAXI_LED, OUTPUT);
@@ -18,15 +31,21 @@ void setup() {
 }
 
 void loop() {
-  tx = pulseIn(TX, HIGH, 25000);
+  tx = pulseIn(TX, HIGH);
 
-  if(tx > 1700)
-    state++;
+  if(STICK_RIGHT) {
+    STATE_CHANGE(RIGHT);
+  }
     
-  if(tx<1200)
-    state--;
-    
-  delay(3000);
+  if(STICK_LEFT) {
+    STATE_CHANGE(LEFT);
+  }
+
+  if(IDLE_STATE) {
+    ready_for_change = true;
+  }
+  
+  delay(500);
   
   switch(state){
     case 1: nav(); break;
