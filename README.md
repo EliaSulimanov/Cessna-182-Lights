@@ -1,6 +1,8 @@
 # Cessna 182 Lights
 
-[![Elia Sulimanov](https://image.ibb.co/mBx97A/powerd-by-Elia-Sulimanov.jpg)](https://www.linkedin.com/in/elia-sulimanov/)
+<p align="center">
+  <img src="https://image.ibb.co/mBx97A/powerd-by-Elia-Sulimanov.jpg">
+</p>
 
 Cessna 182 RC plane lights control.  
 ### This project made with and for ATtiny85 platform.
@@ -11,6 +13,7 @@ Cessna 182 RC plane lights control.
     - [Installing](#installing)
     - [Using](#using)
  - [Breadboard](#breadboard)
+ - [Schematic](#schematic)
  - [Related Projects](#related-projects)
  - [License](#license)
  
@@ -28,7 +31,14 @@ Cessna 182 RC plane lights control.
  You are good to go!
 
 ## Breadboard
-![Minimal PCB](https://i.ibb.co/0MRKQrC/cessna-lights-small-pcb.jpg)
+<p align="center">
+  <img src="pcb.png">
+</p>
+
+## Schematic
+<p align="center">
+  <img src="schematic.png">
+</p>
 
 ## Related Projects
 * [6 Channel RC TX](https://github.com/EliaSulimanov/6-Channel-RC-TX)
